@@ -341,7 +341,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AD543TC98K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "IOS-8-HW-11-Sventskiy Stanislav/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

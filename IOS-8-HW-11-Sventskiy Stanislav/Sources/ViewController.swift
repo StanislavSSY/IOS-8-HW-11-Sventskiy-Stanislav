@@ -75,7 +75,11 @@ class ViewController: UIViewController {
     
     
     private func setupView() {
-        view.backgroundColor = .gray
+        if #available(iOS 15.0, *) {
+            view.backgroundColor = .systemCyan
+        } else {
+            
+        }
     }
     
     private func setupHierarchy() {
