@@ -60,6 +60,15 @@ class ViewController: UIViewController {
         return label
     }()
     
+    private lazy var labelOrConnect: UILabel = {
+        let label = UILabel()
+        label.text = "---------  or connect with  ---------"
+        label.textColor = UIColor.gray
+        label.font = UIFont.systemFont(ofSize: 17, weight: .medium)
+        
+        return label
+    }()
+    
     // MARK: - LifeCircle
     
     override func viewDidLoad() {
@@ -88,6 +97,7 @@ class ViewController: UIViewController {
         view.addSubview(passwordTextField)
         view.addSubview(button)
         view.addSubview(labelPass)
+        view.addSubview(labelOrConnect)
     }
     
     private func setupLayout() {
@@ -125,6 +135,11 @@ class ViewController: UIViewController {
 
         labelPass.snp.makeConstraints { make in
             make.top.equalTo(view).offset(600)
+            make.centerX.equalTo(view)
+        }
+        
+        labelOrConnect.snp.makeConstraints { make in
+            make.top.equalTo(view).offset(750)
             make.centerX.equalTo(view)
         }
 
