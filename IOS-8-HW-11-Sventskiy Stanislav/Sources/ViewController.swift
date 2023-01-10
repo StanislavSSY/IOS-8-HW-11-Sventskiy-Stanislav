@@ -69,6 +69,23 @@ class ViewController: UIViewController {
         return label
     }()
     
+    private lazy var buttonFB: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Facebook", for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.backgroundColor = UIColor.systemBlue
+        button.layer.cornerRadius = 19
+        return button
+    }()
+    
+    private lazy var buttonTW: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Twitter", for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.backgroundColor = UIColor.systemBlue
+        button.layer.cornerRadius = 19
+        return button
+    }()
     // MARK: - LifeCircle
     
     override func viewDidLoad() {
@@ -98,6 +115,8 @@ class ViewController: UIViewController {
         view.addSubview(button)
         view.addSubview(labelPass)
         view.addSubview(labelOrConnect)
+        view.addSubview(buttonFB)
+        view.addSubview(buttonTW)
     }
     
     private func setupLayout() {
@@ -142,7 +161,20 @@ class ViewController: UIViewController {
             make.top.equalTo(view).offset(750)
             make.centerX.equalTo(view)
         }
-
+        
+            buttonFB.snp.makeConstraints { make in
+                make.top.equalTo(view).offset(790)
+                make.height.equalTo(40)
+                make.left.equalTo(view).offset(25)
+                make.right.equalTo(view).offset(-235)
+        }
+        
+        buttonTW.snp.makeConstraints { make in
+            make.top.equalTo(view).offset(790)
+            make.height.equalTo(40)
+            make.left.equalTo(view).offset(235)
+            make.right.equalTo(view).offset(-25)
+        }
     // MARK: - Actions
        // extension UITextField {
        // func setLeftIcon(_ image: UIImage) {
