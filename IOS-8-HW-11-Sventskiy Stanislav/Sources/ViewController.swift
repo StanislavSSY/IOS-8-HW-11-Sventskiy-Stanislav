@@ -86,6 +86,22 @@ class ViewController: UIViewController {
         button.layer.cornerRadius = 19
         return button
     }()
+    private lazy var labelDontHaveAcc: UILabel = {
+        let label = UILabel()
+        label.text = "Dont have account?"
+        label.textColor = UIColor.white
+        label.font = UIFont.systemFont(ofSize: 17, weight: .medium)
+        
+        return label
+    }()
+    private lazy var labelSignUp: UILabel = {
+        let label = UILabel()
+        label.text = "Sign up"
+        label.textColor = UIColor.blue
+        label.font = UIFont.systemFont(ofSize: 17, weight: .medium)
+        
+        return label
+    }()
     // MARK: - LifeCircle
     
     override func viewDidLoad() {
@@ -117,6 +133,8 @@ class ViewController: UIViewController {
         view.addSubview(labelOrConnect)
         view.addSubview(buttonFB)
         view.addSubview(buttonTW)
+        view.addSubview(labelDontHaveAcc)
+        view.addSubview(labelSignUp)
     }
     
     private func setupLayout() {
@@ -124,7 +142,7 @@ class ViewController: UIViewController {
         label.snp.makeConstraints { make in
             make.top.equalTo(view).offset(120)
             make.centerX.equalTo(view)
-        
+            
         }
         
         loginTextField.snp.makeConstraints { make in
@@ -149,9 +167,9 @@ class ViewController: UIViewController {
             make.left.equalTo(view).offset(45)
             make.right.equalTo(view).offset(-45)
             //make.centerX.equalTo(view)
-           // make.width.height.equalTo(300)
-    }
-
+            // make.width.height.equalTo(300)
+        }
+        
         labelPass.snp.makeConstraints { make in
             make.top.equalTo(view).offset(600)
             make.centerX.equalTo(view)
@@ -162,11 +180,11 @@ class ViewController: UIViewController {
             make.centerX.equalTo(view)
         }
         
-            buttonFB.snp.makeConstraints { make in
-                make.top.equalTo(view).offset(790)
-                make.height.equalTo(40)
-                make.left.equalTo(view).offset(25)
-                make.right.equalTo(view).offset(-235)
+        buttonFB.snp.makeConstraints { make in
+            make.top.equalTo(view).offset(790)
+            make.height.equalTo(40)
+            make.left.equalTo(view).offset(25)
+            make.right.equalTo(view).offset(-235)
         }
         
         buttonTW.snp.makeConstraints { make in
@@ -175,6 +193,16 @@ class ViewController: UIViewController {
             make.left.equalTo(view).offset(235)
             make.right.equalTo(view).offset(-25)
         }
+        labelDontHaveAcc.snp.makeConstraints { make in
+            make.top.equalTo(view).offset(850)
+            make.left.equalTo(view).offset(95)
+            make.right.equalTo(view).offset(-125)
+        }
+        labelSignUp.snp.makeConstraints { make in
+            make.top.equalTo(view).offset(850)
+            make.left.equalTo(view).offset(255)
+            make.right.equalTo(view).offset(-35)
+    }
     // MARK: - Actions
        // extension UITextField {
        // func setLeftIcon(_ image: UIImage) {
