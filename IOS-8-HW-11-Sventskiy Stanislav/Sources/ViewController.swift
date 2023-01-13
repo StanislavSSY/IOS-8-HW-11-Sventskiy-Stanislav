@@ -7,8 +7,9 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
     // MARK: - UI Elements
     
     private lazy var label: UILabel = {
@@ -102,6 +103,22 @@ class ViewController: UIViewController {
         
         return label
     }()
+    private lazy var separatOneView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.gray
+        view.layer.cornerRadius = 19
+        
+        return view
+    }()
+    
+    private lazy var separatTwoView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.gray
+        view.layer.cornerRadius = 19
+        
+        return view
+    }()
+    
     // MARK: - LifeCircle
     
     override func viewDidLoad() {
@@ -135,6 +152,8 @@ class ViewController: UIViewController {
         view.addSubview(buttonTW)
         view.addSubview(labelDontHaveAcc)
         view.addSubview(labelSignUp)
+        view.addSubview(separatOneView)
+        view.addSubview(separatTwoView)
     }
     
     private func setupLayout() {
@@ -203,6 +222,19 @@ class ViewController: UIViewController {
             make.left.equalTo(view).offset(255)
             make.right.equalTo(view).offset(-35)
     }
+        separatOneView.snp.makeConstraints { make in
+            make.top.equalTo(view).offset(760)
+            make.left.equalTo(view).offset(275)
+            make.right.equalTo(view).offset(-30)
+            make.height.equalTo(2)
+        }
+        
+        separatTwoView.snp.makeConstraints { make in
+            make.top.equalTo(view).offset(760)
+            make.left.equalTo(view).offset(30)
+            make.right.equalTo(view).offset(-275)
+            make.height.equalTo(2)
+        }
     // MARK: - Actions
        // extension UITextField {
        // func setLeftIcon(_ image: UIImage) {
