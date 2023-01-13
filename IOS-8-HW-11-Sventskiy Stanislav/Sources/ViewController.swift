@@ -62,7 +62,7 @@ class ViewController: UIViewController {
     
     private lazy var labelOrConnect: UILabel = {
         let label = UILabel()
-        label.text = "---------  or connect with  ---------"
+        label.text = " or connect with "
         label.textColor = UIColor.gray
         label.font = UIFont.systemFont(ofSize: 17, weight: .medium)
         
@@ -146,7 +146,7 @@ class ViewController: UIViewController {
         }
         
         loginTextField.snp.makeConstraints { make in
-            make.top.equalTo(label.snp.bottom).offset(110)
+            make.top.equalTo(label.snp.bottom).offset(90)
             make.height.equalTo(50)
             make.left.equalTo(view).offset(45)
             make.right.equalTo(view).offset(-45)
@@ -154,7 +154,7 @@ class ViewController: UIViewController {
         }
         
         passwordTextField.snp.makeConstraints { make in
-            make.top.equalTo(label.snp.bottom).offset(180)
+            make.top.equalTo(label.snp.bottom).offset(160)
             make.height.equalTo(50)
             make.left.equalTo(view).offset(45)
             make.right.equalTo(view).offset(-45)
@@ -162,7 +162,7 @@ class ViewController: UIViewController {
         }
         
         button.snp.makeConstraints { make in
-            make.top.equalTo(label.snp.bottom).offset(370)
+            make.top.equalTo(label.snp.bottom).offset(280)
             make.height.equalTo(50)
             make.left.equalTo(view).offset(45)
             make.right.equalTo(view).offset(-45)
@@ -171,7 +171,7 @@ class ViewController: UIViewController {
         }
         
         labelPass.snp.makeConstraints { make in
-            make.top.equalTo(view).offset(600)
+            make.top.equalTo(view).offset(510)
             make.centerX.equalTo(view)
         }
         
