@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         textFied.layer.shadowRadius = 10
         textFied.layer.shouldRasterize = true
         textFied.layer.rasterizationScale = UIScreen.main.scale
-
+        //textFied.setLeftIcon(UIImage(systemName: "Name") ?? !)
         return textFied
         
     }()
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         button.layer.shadowRadius = 10
         button.layer.shouldRasterize = true
         button.layer.rasterizationScale = UIScreen.main.scale
-
+        
         return button
     }()
     
@@ -119,7 +119,7 @@ class ViewController: UIViewController {
         button.layer.shadowRadius = 10
         button.layer.shouldRasterize = true
         button.layer.rasterizationScale = UIScreen.main.scale
-
+        
         return button
     }()
     private lazy var labelDontHaveAcc: UILabel = {
@@ -148,7 +148,7 @@ class ViewController: UIViewController {
         view.layer.shadowRadius = 10
         view.layer.shouldRasterize = true
         view.layer.rasterizationScale = UIScreen.main.scale
-
+        
         
         return view
     }()
@@ -283,9 +283,10 @@ class ViewController: UIViewController {
             make.right.equalTo(view).offset(-275)
             make.height.equalTo(2)
         }
-        //MARK: - Actions
-       
-        
-        
     }
-}
+    
+    
+    }
+    //MARK: - Actions
+    
+
