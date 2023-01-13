@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         let textFied = UITextField()
         textFied.textColor = .blue
         textFied.textAlignment = .left
-        textFied.placeholder = "  Keanureaves01"
+        textFied.placeholder = "  Name  "
         textFied.backgroundColor = .white
         textFied.layer.cornerRadius = 19
         textFied.layer.shadowColor = UIColor.black.cgColor
@@ -34,7 +34,8 @@ class ViewController: UIViewController {
         textFied.layer.shadowRadius = 10
         textFied.layer.shouldRasterize = true
         textFied.layer.rasterizationScale = UIScreen.main.scale
-        //textFied.setLeftIcon(UIImage(systemName: "Name") ?? !)
+        textFied.setLeftIcon(UIImage(systemName: "person.fill")!)
+       // textFied.setLeftIconTwo(UIImage(systemName: "v.circle.fill")!)
         return textFied
         
     }()
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
         let textFied = UITextField()
         textFied.textColor = .blue
         textFied.textAlignment = .left
-        textFied.placeholder = "  Password "
+        textFied.placeholder = "  Password  "
         textFied.backgroundColor = .white
         textFied.layer.cornerRadius = 19
         textFied.layer.shadowColor = UIColor.black.cgColor
@@ -52,6 +53,7 @@ class ViewController: UIViewController {
         textFied.layer.shadowRadius = 10
         textFied.layer.shouldRasterize = true
         textFied.layer.rasterizationScale = UIScreen.main.scale
+        textFied.setLeftIcon(UIImage(systemName: "lock.fill" )!)
         
         return textFied
         
