@@ -28,6 +28,13 @@ class ViewController: UIViewController {
         textFied.placeholder = "  Keanureaves01"
         textFied.backgroundColor = .white
         textFied.layer.cornerRadius = 19
+        textFied.layer.shadowColor = UIColor.black.cgColor
+        textFied.layer.shadowOpacity = 0.5
+        textFied.layer.shadowOffset = .zero
+        textFied.layer.shadowRadius = 10
+        textFied.layer.shouldRasterize = true
+        textFied.layer.rasterizationScale = UIScreen.main.scale
+
         return textFied
         
     }()
@@ -39,6 +46,13 @@ class ViewController: UIViewController {
         textFied.placeholder = "  Password "
         textFied.backgroundColor = .white
         textFied.layer.cornerRadius = 19
+        textFied.layer.shadowColor = UIColor.black.cgColor
+        textFied.layer.shadowOpacity = 0.5
+        textFied.layer.shadowOffset = .zero
+        textFied.layer.shadowRadius = 10
+        textFied.layer.shouldRasterize = true
+        textFied.layer.rasterizationScale = UIScreen.main.scale
+        
         return textFied
         
     }()
@@ -49,6 +63,13 @@ class ViewController: UIViewController {
         button.setTitleColor(UIColor.white, for: .normal)
         button.backgroundColor = UIColor.systemIndigo
         button.layer.cornerRadius = 19
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 0.5
+        button.layer.shadowOffset = .zero
+        button.layer.shadowRadius = 10
+        button.layer.shouldRasterize = true
+        button.layer.rasterizationScale = UIScreen.main.scale
+
         return button
     }()
     
@@ -76,6 +97,13 @@ class ViewController: UIViewController {
         button.setTitleColor(UIColor.white, for: .normal)
         button.backgroundColor = UIColor.systemBlue
         button.layer.cornerRadius = 19
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 0.5
+        button.layer.shadowOffset = .zero
+        button.layer.shadowRadius = 10
+        button.layer.shouldRasterize = true
+        button.layer.rasterizationScale = UIScreen.main.scale
+        
         return button
     }()
     
@@ -85,6 +113,13 @@ class ViewController: UIViewController {
         button.setTitleColor(UIColor.white, for: .normal)
         button.backgroundColor = UIColor.systemBlue
         button.layer.cornerRadius = 19
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 0.5
+        button.layer.shadowOffset = .zero
+        button.layer.shadowRadius = 10
+        button.layer.shouldRasterize = true
+        button.layer.rasterizationScale = UIScreen.main.scale
+
         return button
     }()
     private lazy var labelDontHaveAcc: UILabel = {
@@ -107,6 +142,13 @@ class ViewController: UIViewController {
         let view = UIView()
         view.backgroundColor = UIColor.gray
         view.layer.cornerRadius = 19
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 0.5
+        view.layer.shadowOffset = .zero
+        view.layer.shadowRadius = 10
+        view.layer.shouldRasterize = true
+        view.layer.rasterizationScale = UIScreen.main.scale
+
         
         return view
     }()
@@ -115,6 +157,12 @@ class ViewController: UIViewController {
         let view = UIView()
         view.backgroundColor = UIColor.gray
         view.layer.cornerRadius = 19
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 0.5
+        view.layer.shadowOffset = .zero
+        view.layer.shadowRadius = 10
+        view.layer.shouldRasterize = true
+        view.layer.rasterizationScale = UIScreen.main.scale
         
         return view
     }()
@@ -195,19 +243,19 @@ class ViewController: UIViewController {
         }
         
         labelOrConnect.snp.makeConstraints { make in
-            make.top.equalTo(view).offset(750)
+            make.top.equalTo(view).offset(700)
             make.centerX.equalTo(view)
         }
         
         buttonFB.snp.makeConstraints { make in
-            make.top.equalTo(view).offset(790)
+            make.top.equalTo(view).offset(760)
             make.height.equalTo(40)
             make.left.equalTo(view).offset(25)
             make.right.equalTo(view).offset(-235)
         }
         
         buttonTW.snp.makeConstraints { make in
-            make.top.equalTo(view).offset(790)
+            make.top.equalTo(view).offset(760)
             make.height.equalTo(40)
             make.left.equalTo(view).offset(235)
             make.right.equalTo(view).offset(-25)
@@ -221,30 +269,23 @@ class ViewController: UIViewController {
             make.top.equalTo(view).offset(850)
             make.left.equalTo(view).offset(255)
             make.right.equalTo(view).offset(-35)
-    }
+        }
         separatOneView.snp.makeConstraints { make in
-            make.top.equalTo(view).offset(760)
+            make.top.equalTo(view).offset(710)
             make.left.equalTo(view).offset(275)
             make.right.equalTo(view).offset(-30)
             make.height.equalTo(2)
         }
         
         separatTwoView.snp.makeConstraints { make in
-            make.top.equalTo(view).offset(760)
+            make.top.equalTo(view).offset(710)
             make.left.equalTo(view).offset(30)
             make.right.equalTo(view).offset(-275)
             make.height.equalTo(2)
         }
-    // MARK: - Actions
-       // extension UITextField {
-       // func setLeftIcon(_ image: UIImage) {
-       // let iconView = UIImageView(frame: CGRect(x: 10, y: 5, width: 20, height: 20))
-       // iconView.image = image
-       // let iconContainerView: UIView = UIView(frame: CGRect(x: 20, y: 0, width: 30, height: 30))
-      //  let iconContainerView.addSubview(iconView)
-      //  leftView = iconContainerView
-      //  leftViewMode = .always
+        //MARK: - Actions
+       
+        
+        
+    }
 }
-}
-    
-

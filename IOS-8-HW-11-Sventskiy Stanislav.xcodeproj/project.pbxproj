@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		35533A882953ACDB0066366E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 35533A872953ACDB0066366E /* SnapKit */; };
+		3599129A29718AB0007E37D6 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3599129929718AB0007E37D6 /* Extentions.swift */; };
 		35E75408295360D300A785C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75407295360D300A785C3 /* AppDelegate.swift */; };
 		35E7540A295360D300A785C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75409295360D300A785C3 /* SceneDelegate.swift */; };
 		35E7540C295360D300A785C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E7540B295360D300A785C3 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3599129929718AB0007E37D6 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		35E75404295360D300A785C3 /* IOS-8-HW-11-Sventskiy Stanislav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-8-HW-11-Sventskiy Stanislav.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E75407295360D300A785C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35E75409295360D300A785C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			children = (
 				35E7541D2953722F00A785C3 /* App */,
 				35E7540B295360D300A785C3 /* ViewController.swift */,
+				3599129929718AB0007E37D6 /* Extentions.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3599129A29718AB0007E37D6 /* Extentions.swift in Sources */,
 				35E7540C295360D300A785C3 /* ViewController.swift in Sources */,
 				35E75408295360D300A785C3 /* AppDelegate.swift in Sources */,
 				35E7540A295360D300A785C3 /* SceneDelegate.swift in Sources */,
