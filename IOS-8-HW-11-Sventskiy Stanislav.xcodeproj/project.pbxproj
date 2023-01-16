@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35533A882953ACDB0066366E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 35533A872953ACDB0066366E /* SnapKit */; };
+		3599129A29718AB0007E37D6 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3599129929718AB0007E37D6 /* Extentions.swift */; };
 		35E75408295360D300A785C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75407295360D300A785C3 /* AppDelegate.swift */; };
 		35E7540A295360D300A785C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E75409295360D300A785C3 /* SceneDelegate.swift */; };
 		35E7540C295360D300A785C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E7540B295360D300A785C3 /* ViewController.swift */; };
-		35E7540F295360D300A785C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E7540D295360D300A785C3 /* Main.storyboard */; };
 		35E75411295360D500A785C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E75410295360D500A785C3 /* Assets.xcassets */; };
 		35E75414295360D500A785C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E75412295360D500A785C3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3599129929718AB0007E37D6 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		35E75404295360D300A785C3 /* IOS-8-HW-11-Sventskiy Stanislav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-8-HW-11-Sventskiy Stanislav.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E75407295360D300A785C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35E75409295360D300A785C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		35E7540B295360D300A785C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		35E7540E295360D300A785C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35E75410295360D500A785C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35E75413295360D500A785C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35E75415295360D500A785C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35533A882953ACDB0066366E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +58,39 @@
 		35E75406295360D300A785C3 /* IOS-8-HW-11-Sventskiy Stanislav */ = {
 			isa = PBXGroup;
 			children = (
-				35E75407295360D300A785C3 /* AppDelegate.swift */,
-				35E75409295360D300A785C3 /* SceneDelegate.swift */,
+				35E7541C295371CC00A785C3 /* Resources */,
+				35E7541B295371B700A785C3 /* Sources */,
+			);
+			path = "IOS-8-HW-11-Sventskiy Stanislav";
+			sourceTree = "<group>";
+		};
+		35E7541B295371B700A785C3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				35E7541D2953722F00A785C3 /* App */,
 				35E7540B295360D300A785C3 /* ViewController.swift */,
-				35E7540D295360D300A785C3 /* Main.storyboard */,
+				3599129929718AB0007E37D6 /* Extentions.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		35E7541C295371CC00A785C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				35E75410295360D500A785C3 /* Assets.xcassets */,
 				35E75412295360D500A785C3 /* LaunchScreen.storyboard */,
 				35E75415295360D500A785C3 /* Info.plist */,
 			);
-			path = "IOS-8-HW-11-Sventskiy Stanislav";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		35E7541D2953722F00A785C3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				35E75407295360D300A785C3 /* AppDelegate.swift */,
+				35E75409295360D300A785C3 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +109,9 @@
 			dependencies = (
 			);
 			name = "IOS-8-HW-11-Sventskiy Stanislav";
+			packageProductDependencies = (
+				35533A872953ACDB0066366E /* SnapKit */,
+			);
 			productName = "IOS-8-HW-11-Sventskiy Stanislav";
 			productReference = 35E75404295360D300A785C3 /* IOS-8-HW-11-Sventskiy Stanislav.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +140,9 @@
 				Base,
 			);
 			mainGroup = 35E753FB295360D300A785C3;
+			packageReferences = (
+				35533A862953ACDB0066366E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 35E75405295360D300A785C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +159,6 @@
 			files = (
 				35E75414295360D500A785C3 /* LaunchScreen.storyboard in Resources */,
 				35E75411295360D500A785C3 /* Assets.xcassets in Resources */,
-				35E7540F295360D300A785C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3599129A29718AB0007E37D6 /* Extentions.swift in Sources */,
 				35E7540C295360D300A785C3 /* ViewController.swift in Sources */,
 				35E75408295360D300A785C3 /* AppDelegate.swift in Sources */,
 				35E7540A295360D300A785C3 /* SceneDelegate.swift in Sources */,
@@ -147,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		35E7540D295360D300A785C3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				35E7540E295360D300A785C3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		35E75412295360D500A785C3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,15 +309,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "IOS-8-HW-11-Sventskiy Stanislav/Info.plist";
+				INFOPLIST_FILE = "IOS-8-HW-11-Sventskiy Stanislav/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +330,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Stanislav-Sventskiy.IOS-8-HW-11-Sventskiy-Stanislav";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,15 +342,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AD543TC98K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "IOS-8-HW-11-Sventskiy Stanislav/Info.plist";
+				INFOPLIST_FILE = "IOS-8-HW-11-Sventskiy Stanislav/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +363,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Stanislav-Sventskiy.IOS-8-HW-11-Sventskiy-Stanislav";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -356,6 +392,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		35533A862953ACDB0066366E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35533A872953ACDB0066366E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35533A862953ACDB0066366E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35E753FC295360D300A785C3 /* Project object */;
 }
